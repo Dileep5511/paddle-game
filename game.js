@@ -8,12 +8,12 @@ gamepadArray[0].right.gamePurpose = "Right";
 
 // Leave the background a little transparent so that the ball
 // leaves a glowing trail
-var BACKGROUND_COLOR = makeColor(0.1, 0.2, 0.2, 0.7);
+var BACKGROUND_COLOR = makeColor(0.1, 0.2, 0.3, 0.5);
 
-var PADDLE_SPEED     = 1000; // pixels per second
-var PADDLE_COLOR     = makeColor(0.2, 1.0, 1.0);
+var PADDLE_SPEED     = 1500; // pixels per second
+var PADDLE_COLOR     = makeColor(0.2, 0.8, 1.0);
 
-var BALL_COLOR       = makeColor(1.0, 1.0, 0.3);
+var BALL_COLOR       = makeColor(1.0, 0.7, 0.3);
 
 var ball;
 var paddle;
@@ -27,11 +27,11 @@ function onGameStart() {
         // in pixels
         position:     {x: screenWidth / 2, 
                        y: screenHeight / 2},
-        radius:       30,
+        radius:       25,
 
         // pixels/second
-        velocity:     {x: +500,
-                       y: -500}};
+        velocity:     {x: +400,
+                       y: -400}};
 
     paddle = {
         position:     {x: screenWidth / 2,
